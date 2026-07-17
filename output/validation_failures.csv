@@ -1,0 +1,8 @@
+table,check,details
+analysis,invalid_company_id,4 invalid company_id values
+balancesheet,invalid_company_id,85 invalid company_id values
+cashflow,invalid_company_id,96 invalid company_id values
+documents,invalid_company_id,128 invalid company_id values
+financial_ratios,invalid_company_id,24 invalid company_id values
+profitandloss,invalid_company_id,99 invalid company_id values
+prosandcons,invalid_company_id,2 invalid company_id values

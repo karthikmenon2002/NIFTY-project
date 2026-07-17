@@ -1,0 +1,6 @@
+table,file,rows_loaded,status,error
+companies,companies_complete.xlsx,100,SUCCESS,
+profitandloss,profitandloss.xlsx,1276,SUCCESS,
+balancesheet,balancesheet.xlsx,0,FAILED,"No matching columns found for table 'balancesheet'.
+Excel columns: ['bluestock_fintech_—_nifty_100_|_balance_sheet_|_1,312_records']
+SQL columns: ['id', 'company_id', 'year', 'equity_capital', 'reserves', 'borrowings', 'other_liabilities', 'total_liabilities', 'fixed_assets', 'investments', 'other_assets', 'total_assets']"

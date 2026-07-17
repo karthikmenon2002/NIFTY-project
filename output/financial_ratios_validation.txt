@@ -1,0 +1,163 @@
+======================================================================
+SPRINT 2 - FINANCIAL RATIO ENGINE
+DAY 13 - VALIDATE FINANCIAL_RATIOS
+======================================================================
+Database: C:\Users\KARTHIK  MENON\OneDrive\Desktop\nifty100_project\db\nifty100.db
+
+SOURCE AND TARGET ROW COUNTS
+----------------------------------------------------------------------
+companies            92
+profitandloss        1177
+balancesheet         1227
+cashflow             1056
+financial_ratios     1073
+
+1. REQUIRED TABLE CHECK
+----------------------------------------------------------------------
+PASS: All required tables exist.
+
+2. REQUIRED COLUMN CHECK
+----------------------------------------------------------------------
+PASS: financial_ratios contains company_id and year.
+
+3. ROW COUNT AND COMPLETENESS CHECK
+----------------------------------------------------------------------
+Eligible company-year combinations: 1073
+financial_ratios rows:              1073
+Unique target company-years:        1073
+Completeness:                       100.00%
+PASS: Row completeness is 100%.
+WARNING: Row count is 1073, below the nominal Sprint target of 1,100; however, the actual eligible source population is 1073.
+
+4. NULL COMPANY ID CHECK
+----------------------------------------------------------------------
+NULL/blank company IDs: 0
+PASS: No NULL or blank company IDs.
+
+5. FOREIGN KEY CHECK
+----------------------------------------------------------------------
+Invalid company references: 0
+SQLite foreign-key violations: 0
+PASS: All company IDs are valid and no foreign-key violations were found.
+
+6. DUPLICATE COMPANY-YEAR CHECK
+----------------------------------------------------------------------
+Duplicate company-year groups: 0
+PASS: No duplicate company-year rows.
+
+7. SOURCE-TARGET COVERAGE CHECK
+----------------------------------------------------------------------
+Missing eligible company-year rows: 0
+Unexpected extra company-year rows: 0
+PASS: No eligible company-year combinations are missing.
+PASS: No unexpected extra company-year combinations.
+
+8. YEAR VALIDATION
+----------------------------------------------------------------------
+Invalid years: 0
+Minimum year: 2011
+Maximum year: 2024
+PASS: All target years are valid.
+
+9. COMPANY COVERAGE CHECK
+----------------------------------------------------------------------
+Companies table:                  92
+Companies in financial_ratios:    92
+Companies without ratio records:  0
+PASS: All companies have at least one financial-ratio record.
+
+10. NUMERIC RATIO SANITY CHECK
+----------------------------------------------------------------------
+Non-finite numeric values: 0
+Extreme numeric values:    14
+PASS: No NaN or infinite values detected in critical ratio columns.
+WARNING: Found 14 values outside configured sanity limits.
+  BEL | 2013 | return_on_equity_pct = 15183.3333
+  BEL | 2014 | return_on_equity_pct = 13600.0
+  BEL | 2015 | return_on_equity_pct = 17100.0
+  BEL | 2016 | return_on_equity_pct = 11141.6667
+  BEL | 2017 | return_on_equity_pct = 10153.3333
+  INDIGO | 2013 | return_on_equity_pct = 17886.3636
+  INDIGO | 2013 | return_on_capital_employed_pct = 54266.2338
+  INDIGO | 2014 | return_on_equity_pct = 10772.7273
+  INDIGO | 2014 | return_on_capital_employed_pct = 58086.9565
+  INDIGO | 2015 | return_on_capital_employed_pct = 39592.1053
+  INDIGO | 2017 | return_on_capital_employed_pct = 10916.0
+  INDIGO | 2018 | return_on_capital_employed_pct = 12989.6104
+  INDIGO | 2019 | return_on_capital_employed_pct = 13201.3825
+  INDIGO | 2020 | return_on_capital_employed_pct = 12479.5276
+
+11. CAGR FLAG VALIDATION
+----------------------------------------------------------------------
+Invalid CAGR flags: 0
+PASS: All CAGR flags use recognized values.
+
+12. CAPITAL ALLOCATION VALIDATION
+----------------------------------------------------------------------
+Capital allocation distribution:
+  Reinvestor: 587
+  Shareholder Returns: 134
+  Mixed: 110
+  Growth Funded by Debt: 98
+  Liquidating Assets: 95
+  Distress Signal: 38
+  Pre-Revenue: 8
+  Cash Accumulator: 3
+Invalid capital-allocation patterns: 0
+PASS: All capital-allocation patterns are recognized.
+
+13. NULL DISTRIBUTION REPORT
+----------------------------------------------------------------------
+Columns with highest NULL percentages:
+  dividend_payout_ratio_pct            1073 (100.00%)
+  earnings_per_share                   1073 (100.00%)
+  eps_cagr_10yr                        1073 (100.00%)
+  eps_cagr_3yr                         1073 (100.00%)
+  eps_cagr_5yr                         1073 (100.00%)
+  icr_label                            1042 ( 97.11%)
+  pat_cagr_10yr                         912 ( 85.00%)
+  revenue_cagr_10yr                     903 ( 84.16%)
+  revenue_cagr_3yr_flag                 795 ( 74.09%)
+  pat_cagr_3yr_flag                     707 ( 65.89%)
+  revenue_cagr_5yr_flag                 615 ( 57.32%)
+  pat_cagr_5yr_flag                     552 ( 51.44%)
+  pat_cagr_5yr                          521 ( 48.56%)
+  revenue_cagr_5yr                      458 ( 42.68%)
+  pat_cagr_3yr                          366 ( 34.11%)
+  revenue_cagr_3yr                      278 ( 25.91%)
+  revenue_cagr_10yr_flag                170 ( 15.84%)
+  pat_cagr_10yr_flag                    161 ( 15.00%)
+  interest_coverage                      43 (  4.01%)
+  fcf_conversion_rate_pct                32 (  2.98%)
+WARNING: Completely NULL columns: dividend_payout_ratio_pct, earnings_per_share, eps_cagr_10yr, eps_cagr_3yr, eps_cagr_5yr
+
+14. SQLITE DATABASE INTEGRITY CHECK
+----------------------------------------------------------------------
+SQLite integrity result: ok
+PASS: SQLite database integrity check passed.
+
+======================================================================
+DAY 13 VALIDATION SUMMARY
+======================================================================
+Eligible company-year combinations: 1073
+financial_ratios rows:              1073
+Passed checks:                      14
+Warnings:                           3
+Failed checks:                      0
+
+WARNINGS
+----------------------------------------------------------------------
+1. Row count is 1073, below the nominal Sprint target of 1,100; however, the actual eligible source population is 1073.
+2. Found 14 values outside configured sanity limits.
+3. Completely NULL columns: dividend_payout_ratio_pct, earnings_per_share, eps_cagr_10yr, eps_cagr_3yr, eps_cagr_5yr
+
+======================================================================
+DAY 13 VALIDATION STATUS: PASS
+financial_ratios successfully represents the available eligible source data.
+
+NOTE: The nominal Sprint target is >= 1,100 rows, but the current database contains only 1073 eligible unique company-year combinations.
+No artificial rows should be created solely to reach 1,100.
+======================================================================
+
+Validation report:
+C:\Users\KARTHIK  MENON\OneDrive\Desktop\nifty100_project\output\financial_ratios_validation.txt

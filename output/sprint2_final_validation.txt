@@ -1,0 +1,135 @@
+======================================================================
+SPRINT 2 - FINANCIAL RATIO ENGINE
+FINAL SPRINT 2 VALIDATION
+======================================================================
+Database: C:\Users\KARTHIK  MENON\OneDrive\Desktop\nifty100_project\db\nifty100.db
+
+1. DATABASE FILE CHECK
+----------------------------------------------------------------------
+PASS: Database file exists.
+
+2. REQUIRED TABLE CHECK
+----------------------------------------------------------------------
+PASS: All required Sprint 2 tables exist.
+
+3. SOURCE AND TARGET ROW COUNTS
+----------------------------------------------------------------------
+companies              92
+profitandloss          1177
+balancesheet           1227
+cashflow               1056
+financial_ratios       1073
+peer_groups            56
+sectors                92
+
+4. COMPANY COVERAGE CHECK
+----------------------------------------------------------------------
+Companies table:               92
+Companies in financial ratios: 92
+Companies with sector data:    92
+PASS: All companies are represented in the core Sprint 2 data.
+
+5. FINANCIAL RATIOS SCHEMA CHECK
+----------------------------------------------------------------------
+PASS: Required financial-ratio columns are present.
+
+6. FINANCIAL RATIOS COMPLETENESS CHECK
+----------------------------------------------------------------------
+Eligible company-years:       1073
+financial_ratios rows:        1073
+Unique company-years:         1073
+Completeness:                 100.00%
+Missing eligible rows:        0
+Unexpected extra rows:        0
+PASS: Financial-ratio source coverage is complete.
+WARNING: financial_ratios contains 1073 rows, below the nominal target of 1100; however, the actual eligible source population is 1073.
+
+7. DUPLICATE COMPANY-YEAR CHECK
+----------------------------------------------------------------------
+Duplicate company-year groups: 0
+PASS: No duplicate company-year rows.
+
+8. NULL COMPANY ID CHECK
+----------------------------------------------------------------------
+NULL/blank company IDs:       0
+PASS: No NULL or blank company IDs.
+
+9. FOREIGN KEY CHECK
+----------------------------------------------------------------------
+Invalid company references:   0
+SQLite FK violations:         0
+PASS: Foreign-key validation passed.
+
+10. CASH FLOW DATA CHECK
+----------------------------------------------------------------------
+Cashflow rows:               1056
+Non-NULL operating_cash_flow      1054
+Non-NULL investing_cash_flow      1054
+Non-NULL financing_cash_flow      1054
+Non-NULL net_cash_flow            1054
+PASS: Cash-flow source metrics are populated.
+
+11. CASH-FLOW DERIVED RATIO CHECK
+----------------------------------------------------------------------
+cash_from_operations_cr             1054
+free_cash_flow_cr                   1054
+cfo_pat_ratio                       1053
+fcf_conversion_rate_pct             1041
+PASS: Cash-flow derived metrics are populated.
+
+12. CAPITAL ALLOCATION CHECK
+----------------------------------------------------------------------
+Rows with capital-allocation classification: 1073
+PASS: All financial-ratio rows have a capital-allocation pattern.
+
+13. PEER GROUP AND SECTOR DATA CHECK
+----------------------------------------------------------------------
+Peer-group assignments:       56
+Sector assignments:           92
+PASS: Peer-group and sector supporting data are loaded.
+
+14. PEER ANALYSIS OUTPUT CHECK
+----------------------------------------------------------------------
+Peer-analysis rows:          92
+Distinct companies:          92
+Duplicate companies:         0
+Missing analysis groups:     0
+Missing peer scores:         0
+PASS: Peer-analysis output covers all companies.
+
+15. PEER GROUP SUMMARY CHECK
+----------------------------------------------------------------------
+Peer-group summary rows:     27
+PASS: Peer-group summary was generated.
+
+16. FINANCIAL VALIDATION REPORT CHECK
+----------------------------------------------------------------------
+PASS: Financial-ratio validation report exists.
+C:\Users\KARTHIK  MENON\OneDrive\Desktop\nifty100_project\output\financial_ratios_validation.txt
+
+17. SQLITE DATABASE INTEGRITY CHECK
+----------------------------------------------------------------------
+SQLite integrity result: ok
+PASS: SQLite database integrity check passed.
+
+======================================================================
+SPRINT 2 FINAL VALIDATION SUMMARY
+======================================================================
+Passed checks: 16
+Warnings:      1
+Failed checks: 0
+
+WARNINGS
+----------------------------------------------------------------------
+1. financial_ratios contains 1073 rows, below the nominal target of 1100; however, the actual eligible source population is 1073.
+
+======================================================================
+SPRINT 2 FINAL STATUS: PASS
+Sprint 2 - Financial Ratio Engine is complete.
+
+NOTE: The nominal target is >= 1,100 rows, but the available valid source population contains fewer eligible company-year combinations.
+No artificial rows are required.
+======================================================================
+
+Final Sprint 2 validation report:
+C:\Users\KARTHIK  MENON\OneDrive\Desktop\nifty100_project\output\sprint2_final_validation.txt

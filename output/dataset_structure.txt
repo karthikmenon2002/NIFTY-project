@@ -1,0 +1,48 @@
+
+FILE: data\raw\analysis.xlsx
+SHAPE: (21, 6)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Analysis  |  20 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+FILE: data\raw\balancesheet.xlsx
+SHAPE: (1313, 13)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Balance Sheet  |  1,312 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12']
+
+FILE: data\raw\cashflow.xlsx
+SHAPE: (1188, 7)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Cash Flow  |  1,187 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+
+FILE: data\raw\companies.xlsx
+SHAPE: (93, 12)
+COLUMNS: ['Mkt Fintech — Nifty 100  |  Companies  |  92 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11']
+
+FILE: data\raw\documents.xlsx
+SHAPE: (1586, 4)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Documents  |  1,585 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3']
+
+FILE: data\raw\profitandloss.xlsx
+SHAPE: (1277, 15)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Profit & Loss  |  1,276 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14']
+
+FILE: data\raw\prosandcons.xlsx
+SHAPE: (17, 4)
+COLUMNS: ['Bluestock Fintech — Nifty 100  |  Pros & Cons  |  16 records', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3']
+
+FILE: data\supporting\financial_ratios.xlsx
+SHAPE: (1184, 16)
+COLUMNS: ['id', 'company_id', 'year', 'net_profit_margin_pct', 'operating_profit_margin_pct', 'return_on_equity_pct', 'debt_to_equity', 'interest_coverage', 'asset_turnover', 'free_cash_flow_cr', 'capex_cr', 'earnings_per_share', 'book_value_per_share', 'dividend_payout_ratio_pct', 'total_debt_cr', 'cash_from_operations_cr']
+
+FILE: data\supporting\market_cap.xlsx
+SHAPE: (552, 9)
+COLUMNS: ['id', 'company_id', 'year', 'market_cap_crore', 'enterprise_value_crore', 'pe_ratio', 'pb_ratio', 'ev_ebitda', 'dividend_yield_pct']
+
+FILE: data\supporting\peer_groups.xlsx
+SHAPE: (56, 4)
+COLUMNS: ['id', 'peer_group_name', 'company_id', 'is_benchmark']
+
+FILE: data\supporting\sectors.xlsx
+SHAPE: (92, 6)
+COLUMNS: ['id', 'company_id', 'broad_sector', 'sub_sector', 'index_weight_pct', 'market_cap_category']
+
+FILE: data\supporting\stock_prices.xlsx
+SHAPE: (5520, 9)
+COLUMNS: ['id', 'company_id', 'date', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'adjusted_close']

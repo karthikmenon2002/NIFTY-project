@@ -1,0 +1,28 @@
+analysis_group,company_count,average_peer_score,median_peer_score,best_peer_score,lowest_peer_score,peer_group_leader,leader_score
+Broad Sector: Communication Services,2,75.95,75.95,78.57,73.33,BHARTIARTL,78.57
+Broad Sector: Consumer Discretionary,3,67.41,73.33,83.33,45.56,INDIGO,83.33
+Broad Sector: Financials,2,75.0,75.0,83.33,66.67,BAJAJHLDNG,83.33
+Broad Sector: Healthcare,1,100.0,100.0,100.0,100.0,APOLLOHOSP,100.0
+Broad Sector: Industrials,6,58.34,58.61,71.67,36.67,BEL,71.67
+Broad Sector: Materials,3,66.66,63.33,74.44,62.22,ASIANPAINT,74.44
+Peer Group: Automobiles,7,57.32,59.34,72.7,37.94,EICHERMOT,72.7
+Peer Group: Consumer Finance,3,66.67,68.89,88.89,42.22,BAJFINANCE,88.89
+Peer Group: FMCG,7,56.59,55.71,84.6,20.88,NESTLEIND,84.6
+Peer Group: IT Services,5,60.0,62.67,75.33,38.67,TCS,75.33
+Peer Group: Life Insurance,4,62.5,67.08,70.0,45.83,LICI,70.0
+Peer Group: Oil & Gas,5,60.0,60.67,72.0,45.33,BPCL,72.0
+Peer Group: Pharmaceuticals,5,60.0,64.0,66.67,44.0,DRREDDY,66.67
+Peer Group: Power & Utilities,7,57.48,49.81,85.71,47.14,ADANIPOWER,85.71
+Peer Group: Private Banks,5,60.0,60.0,76.0,49.33,ICICIBANK,76.0
+Peer Group: Public Sector Banks,4,63.68,66.81,74.44,46.67,CANBK,74.44
+Peer Group: Steel,4,62.44,63.02,83.33,40.38,HINDALCO,83.33
+Sub Sector: Auto Ancillaries,2,75.0,75.0,90.0,60.0,BOSCHLTD,90.0
+Sub Sector: Capital Goods,3,66.35,73.33,90.0,35.71,ABB,90.0
+Sub Sector: Cement,2,75.0,75.0,81.67,68.33,SHREECEM,81.67
+Sub Sector: Conglomerates,1,100.0,100.0,100.0,100.0,ADANIENT,100.0
+Sub Sector: Diversified Financials,2,79.24,79.24,81.82,76.67,JIOFIN,81.82
+Sub Sector: Gas Distribution,1,100.0,100.0,100.0,100.0,ATGL,100.0
+Sub Sector: Power & Utilities,1,100.0,100.0,100.0,100.0,ADANIENSOL,100.0
+Sub Sector: Real Estate,2,75.0,75.0,76.67,73.33,LODHA,76.67
+Sub Sector: Retail,2,76.19,76.19,85.71,66.67,TRENT,85.71
+Sub Sector: Speciality Finance,3,66.67,68.89,77.78,53.33,RECLTD,77.78
